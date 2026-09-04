@@ -95,13 +95,13 @@ export default function Portfolio() {
         <div className="flex justify-center">
           <a
             href="#kontakt"
-            className="flex items-center justify-center gap-2 px-8 h-14 rounded-[10px] text-base font-semibold text-white transition-all duration-200 hover:scale-105 active:scale-95"
+            className="flex items-center justify-center gap-2 px-7 h-14 rounded-[10px] text-base font-semibold text-white transition-all duration-200 hover:scale-105 active:scale-95"
             style={{
               background: 'var(--color-primary)',
               boxShadow: 'var(--shadow-btn)',
             }}
           >
-            Chcesz taki sam efekt? Zamów wycenę
+            <span className="w-[200px] sm:w-auto text-center">Chcesz taki sam efekt? Zamów wycenę</span>
           </a>
         </div>
       </div>
