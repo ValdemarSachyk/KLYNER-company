@@ -49,7 +49,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6"
+              className="text-4xl sm:text-5xl lg:text-[38px] font-bold leading-tight mb-6 lg:w-[500px]"
               style={{ color: 'var(--color-ink)' }}
             >
               Profesjonalne sprzątanie{' '}

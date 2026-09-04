@@ -121,7 +121,7 @@ export default function Services() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-60px' }}
-          className="grid md:grid-cols-3 gap-6"
+          className="grid md:grid-cols-2 gap-6"
         >
           {mainServices.map((service) => {
             const Icon = service.icon;
