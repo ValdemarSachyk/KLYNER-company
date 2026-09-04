@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const navLinks = [
   { label: 'Usługi', href: '#uslugi' },
-  { label: 'Dlaczego my', href: '#dlaczego-my' },
+  { label: 'Nasze realizacje', href: '#realizacje' },
   { label: 'Obszar', href: '#obszar' },
   { label: 'Kontakt', href: '#kontakt' },
 ];

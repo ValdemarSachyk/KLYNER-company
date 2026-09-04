@@ -41,7 +41,7 @@ export default function Hero() {
                   color: 'var(--color-primary)',
                 }}
               >
-                ✦ Profesjonalne sprzątanie w Jeleniej Górze
+                ⭐ 5.0 na podstawie opinii w Google
               </span>
             </motion.div>
 
@@ -52,9 +52,9 @@ export default function Hero() {
               className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6"
               style={{ color: 'var(--color-ink)' }}
             >
-              Czystość,{' '}
-              <span style={{ color: 'var(--color-primary)' }}>której możesz</span>{' '}
-              zaufać
+              Profesjonalne sprzątanie{' '}
+              <span style={{ color: 'var(--color-primary)' }}>apartamentów, biur</span>{' '}
+              Jelenia Góra
             </motion.h1>
 
             <motion.p
@@ -64,8 +64,8 @@ export default function Hero() {
               className="text-lg leading-relaxed mb-8 max-w-lg"
               style={{ color: 'var(--color-ink-secondary)' }}
             >
-              KLYNER to profesjonalne usługi sprzątania dla mieszkań, domów, biur i apartamentów
-              Airbnb. Działamy na terenie Jeleniej Góry, Szklarskiej Poręby i Karpacza.
+              Profesjonalne usługi sprzątania. Oferujemy niezawodną obsługę apartamentów Airbnb,
+              sprzątanie biur i precyzyjne doczyszczanie pobudowlane.
             </motion.p>
 
             <motion.ul
@@ -135,48 +135,19 @@ export default function Hero() {
 }
 
 function HeroVisual() {
-  const cards = [
-    { icon: '🏠', label: 'Mieszkania i domy', color: '#E8F2FD' },
-    { icon: '🏢', label: 'Biura', color: '#E6F9F6' },
-    { icon: '🛏️', label: 'Airbnb', color: '#FFF3E0' },
-  ];
-
   return (
-    <div className="relative flex flex-col gap-4 p-6">
-      {/* Main card */}
+    <div className="relative p-6">
+      {/* Photo */}
       <div
-        className="rounded-2xl p-8 relative overflow-hidden"
-        style={{
-          background: 'white',
-          boxShadow: 'var(--shadow-card-hover)',
-        }}
+        className="rounded-2xl overflow-hidden"
+        style={{ boxShadow: 'var(--shadow-card-hover)' }}
       >
-        <div
-          className="absolute top-0 right-0 w-32 h-32 rounded-full -translate-y-1/2 translate-x-1/2"
-          style={{ background: 'var(--color-primary-light)' }}
+        <img
+          src="/hero-photo.webp"
+          alt="Profesjonalne mycie okien"
+          className="w-full h-full object-cover"
+          style={{ maxHeight: '520px', display: 'block' }}
         />
-        <div className="text-6xl mb-4">✨</div>
-        <h3 className="text-xl font-bold mb-2" style={{ color: 'var(--color-ink)' }}>
-          Nieskazitelna czystość
-        </h3>
-        <p className="text-sm" style={{ color: 'var(--color-ink-secondary)' }}>
-          Każde zlecenie realizujemy z najwyższą starannością i dbałością o szczegóły.
-        </p>
-
-        <div className="mt-6 flex gap-3">
-          {cards.map((c) => (
-            <div
-              key={c.label}
-              className="flex-1 rounded-xl p-3 text-center"
-              style={{ background: c.color }}
-            >
-              <div className="text-2xl mb-1">{c.icon}</div>
-              <div className="text-xs font-medium" style={{ color: 'var(--color-ink)' }}>
-                {c.label}
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
 
       {/* Floating badge */}

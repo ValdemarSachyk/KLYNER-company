@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Home, BedDouble, Building2, ArrowRight } from 'lucide-react';
+import { Home, BedDouble, Building2, Droplets, ArrowRight } from 'lucide-react';
 
 const mainServices = [
   {
@@ -36,18 +36,33 @@ const mainServices = [
   },
   {
     icon: Building2,
-    title: 'Sprzątanie biur i przestrzeni roboczych',
+    title: 'Sprzątanie biur i pobudowlane',
     price: 'od 200 zł',
     description:
-      'Utrzymanie porządku w miejscu pracy to inwestycja w komfort i produktywność zespołu. Oferujemy elastyczne harmonogramy dostosowane do rytmu Twojej firmy.',
+      'Kompleksowa obsługa czystości dla biznesu. Utrzymujemy porządek w biurach oraz usuwamy ciężkie zabrudzenia po budowie. Twój obiekt zawsze gotowy do pracy.',
     features: [
-      'Czyszczenie stanowisk pracy i sal',
+      'Usuwanie pyłu i resztek pobudowlanych',
       'Sprzątanie po godzinach pracy',
       'Umowy miesięczne z rabatem',
     ],
     color: '#E6F9F6',
     iconColor: '#2EC4A9',
     tag: 'Dla firm',
+  },
+  {
+    icon: Droplets,
+    title: 'Mycie okien',
+    price: 'od 30 zł',
+    description:
+      'Myjemy okna, witryny i elewacje szklane bezpośrednio z ziemi, sięgając aż do 14 metrów. Wykorzystujemy wodę demineralizowaną, która gwarantuje krystaliczną czystość bez smug po wyschnięciu.',
+    features: [
+      'Zasięg do 14 metrów bez podnośnika',
+      'Woda demineralizowana (brak zacieków)',
+      'Kompleksowe mycie szyb i ram',
+    ],
+    color: '#E8F2FD',
+    iconColor: '#1A7BE8',
+    tag: 'Specjalistyczne',
   },
 ];
 
